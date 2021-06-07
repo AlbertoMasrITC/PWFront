@@ -1,11 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+
+    <b-navbar type="dark" variant="dark" toggleable="">
+
+      <b-navbar-brand>
+
+        <router-link to="/Categorias">Categorías</router-link> |
+        <router-link to="/Personas">Personal</router-link>
+
+      </b-navbar-brand>
+
+    </b-navbar>
+
+    <router-view class="container mt-3"/>
+    <notifications position="bottom right"/>
+
   </div>
+
 </template>
 
 <style>

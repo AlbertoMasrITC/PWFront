@@ -1,10 +1,10 @@
 <template>
 
-  <div class="home">
+  <div>
 
     <h1>Categorías</h1>
 
-    <b-button variant="primary" to="/Agregar">Agregar</b-button>
+    <b-button variant="primary" to="/AgregarCategoria">Agregar</b-button>
     <Table :items="categorias"/>
 
   </div>
@@ -17,7 +17,7 @@ import Table from '../components/Table'
 import { mapState, mapActions } from 'vuex'
 
 export default {
-  name: 'Home',
+  name: 'HomeCategoria',
   components: {
 
     Table
